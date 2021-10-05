@@ -1,0 +1,105 @@
+#movieposter{
+    padding: 28px;
+    margin: 5px;
+}
+#carddiv{
+    background-color:  #EEFBCF;
+}
+
+#picturediv{
+    float: left;
+}
+#contentdiv{
+    float:left;
+    margin: 20px;
+    width: 500px;
+}
+
+#btndiv{
+    float:left;
+    width: 150px;
+}
+
+#morebtn{
+    margin: 130px 0px 5px -52px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+    background-color: #BED37F;
+}
+
+
+#morebtn:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.contentvalue{
+    display: inline-block;
+    color:grey;
+    margin-left: 15px;
+}
+
+
+#btndiv{
+    float:left;
+}
+
+
+@media only screen and (max-device-width: 770px){
+    #movieposter{
+        padding: 41px;
+        margin-left: 200px;
+        padding-bottom: 32px;
+    } 
+     
+    #carddiv{
+        width: 690px;
+        
+    }
+    #contentdiv{       
+        margin: 15px;
+        width: 632px;
+    }   
+    #btndiv{
+        height: 120px;
+        width: 700px;
+        margin-left: 22px;
+    }
+        
+    #morebtn{
+        margin: 28px 0px 5px 220px;
+        padding: 20px;
+    }
+
+    
+}
+
+@media only screen and (max-device-width: 440px){
+    #movieposter{
+        padding: 41px;
+        margin-left: 30px;
+        padding-bottom: 32px;
+    }       
+    #carddiv{
+        width: 380px;
+        margin-right: 20px;
+    }
+    #contentdiv{       
+        margin: 15px;
+        width: 370px;
+    }   
+    #btndiv{
+        height: 120px;
+        width: 241px;
+        margin-left: 32px;
+    }
+        
+    #morebtn{
+        margin: 28px 0px 5px 59px;
+        padding: 20px;
+    }
+
+
+}

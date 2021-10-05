@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Route } from 'react-router-dom';
+import Showcard from './Showcard';
+import Showdetails from './Showdetails';
+import Topbar from './Topbar';
 
 function App() {
+  const[resultarray,setresult] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.tvmaze.com/search/shows?q=all")
+      .then(response => response.json())
+      .then(datas => {
+        setresult(datas);
+      })
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar/>
+      <Route path="/" exact>
+        <Showcard resultarray={resultarray}/>
+      </Route>
+      <Route path="/ShowDetails/:ShowId/:Showname" exact>
+        <Showdetails resultarray={resultarray}/>
+      </Route>
     </div>
   );
 }

@@ -1,0 +1,22 @@
+.showcard{
+    margin-top: 100px;
+    margin-left: 241px;
+}
+
+
+@media only screen and (max-width: 770px) {
+    .showcard{
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 440px) {
+    .showcard{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

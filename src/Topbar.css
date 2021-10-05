@@ -1,0 +1,52 @@
+#titledivstyle {
+    height: 80px;
+    width: 100%;
+    background-color:#BED37F ;
+    top: 0;
+    margin-right:0;
+    bottom:0;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    position: absolute;    
+}
+
+.titlestyle{
+    padding: 8px 10px 20px 25px;
+    display: inline-block;
+    color: black;
+}
+
+#titlelink{
+    text-decoration: none;
+    color:inherit;
+}
+
+@media only screen and (max-width: 770px) {
+    .titlestyle{
+        padding: 10px;
+        margin-left:10px;
+    }
+
+    #titledivstyle{
+        width: 100%;
+        
+    }
+      
+}
+
+
+@media only screen and (max-width: 440px) {
+    
+    #titledivstyle{
+        width: 100%;
+        right: 0px;
+        
+    }
+      
+}
+
+
+
+
+
+
